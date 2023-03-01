@@ -72,7 +72,7 @@ export default function Home() {
             <p className="text-xl text-slate-400">🧑‍💻 Experience</p>
             <p className="mt-2">
               I have 8+ years of full stack engineering at startups of all
-              sizes. Crypto pilled in 2020 and haven't looked back since.
+              sizes. Crypto pilled in 2020 and haven{"'"}t looked back since.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6">
