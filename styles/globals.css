@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#__next,
 main {
-  height: calc(100% - 3rem);
+  height: 100%;
 }
 
 input {

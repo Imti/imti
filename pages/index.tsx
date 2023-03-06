@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/photo.jpeg" />
       </Head>
-      <main className="m-6">
+      <main className="p-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-center">
             <Image

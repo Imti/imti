@@ -86,7 +86,7 @@ export default function Projects() {
         <meta charSet="utf-8" />
         <link rel="icon" href="/photo.jpeg" />
       </Head>
-      <main className="m-6 font-mono">
+      <main className="p-6 font-mono">
         <Link
           href="/"
           className="fixed top-0 left-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full text-white text-center z-50 text-sm py-1 hover:underline"
