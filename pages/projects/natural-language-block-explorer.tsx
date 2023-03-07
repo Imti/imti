@@ -57,7 +57,7 @@ function randomString() {
 // PR to fix is up on react-mention already:
 // https://github.com/signavio/react-mentions/pull/659
 
-export default function Projects() {
+export default function NaturalLanguageBlockExplorer() {
   const [input, setInput] = useState("");
   const [data, setData] = useState<boolean | null>(null);
   const [loading, setLoading] = useState(false);
@@ -139,7 +139,7 @@ export default function Projects() {
               </span>{" "}
               in the last hour.
             </div>
-            <div className="text-md md:text-lg text-slate-400 text-center mb-4">
+            <div className="md:text-lg text-slate-400 text-center mb-4">
               Here are the 10 most recent transactions:
             </div>
             <table className="table-auto border-collapse text-sm max-w mx-auto">

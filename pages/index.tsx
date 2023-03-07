@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/photo.jpeg" />
       </Head>
-      <main className="p-6">
+      <main className="p-6 max-w-3xl mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-center">
             <Image
@@ -75,10 +76,16 @@ export default function Home() {
               sizes. Crypto pilled in 2020 and haven{"'"}t looked back since.
             </p>
           </div>
-          <div className="bg-white rounded-lg p-6">
-            <p className="text-xl text-slate-400">📑 Articles</p>
-            <p className="mt-2">Coming soon</p>
-          </div>
+          <Link
+            href="/projects"
+            className="bg-white rounded-lg p-6 cursor-pointer group"
+          >
+            <p className="text-xl text-slate-400">⚒ Projects</p>
+            <p className="mt-2">
+              I{"'"}m always building. Anything from small experimental demos to
+              more complex projects used in production.
+            </p>
+          </Link>
         </div>
       </main>
     </>
