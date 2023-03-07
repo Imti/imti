@@ -33,7 +33,7 @@ export default function Home() {
                 size={20}
               />
             </a>
-            <a href="https://twitter.com/imtimaj" target="_blank">
+            <a href="https://www.linkedin.com/in/imtimajeed/" target="_blank">
               <FaLinkedin
                 className="text-[#0072b1] hover:scale-125 transition-transform"
                 size={20}
