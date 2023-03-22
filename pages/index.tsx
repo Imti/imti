@@ -66,7 +66,7 @@ export default function Home() {
             <p className="text-xl text-slate-400">📈 Scope</p>
             <p className="mt-2">
               I was head of engineering at Scope, an expert marketplace, where I
-              hired and managed the remote engineering team.
+              hired and managed a remote engineering team.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6">
