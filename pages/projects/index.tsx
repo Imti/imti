@@ -24,6 +24,9 @@ export default function Projects() {
               Coinbase Base Logo in CSS
             </Link>
           </li>
+          <li>
+            <Link href="/projects/eli5">Simplify text powered by ChatGPT</Link>
+          </li>
         </ul>
       </main>
     </>
