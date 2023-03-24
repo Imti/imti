@@ -38,6 +38,11 @@ export default function Projects() {
                 Simplify text powered by ChatGPT
               </Link>
             </li>
+            <li>
+              <Link href="/projects/grid-animation" className="hover:underline">
+                Framer Grid Animation
+              </Link>
+            </li>
           </ul>
         </div>
       </main>
