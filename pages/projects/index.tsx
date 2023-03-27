@@ -40,7 +40,15 @@ export default function Projects() {
             </li>
             <li>
               <Link href="/projects/grid-animation" className="hover:underline">
-                Framer Grid Animation
+                Grid Animation
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/projects/glowing-animation"
+                className="hover:underline"
+              >
+                Glowing Animation
               </Link>
             </li>
           </ul>
