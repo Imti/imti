@@ -25,7 +25,7 @@ export default function GlowingAnimation() {
             src="/google-logo.png"
             blurAmount={10}
             size={100}
-            className="mb-8 md:mr-8"
+            className="mb-8 md:mr-8 w-[100px] h-[100px]"
           />
           <div className="relative w-[80px] h-[80px] rounded-full mb-8 md:mr-8">
             <div
