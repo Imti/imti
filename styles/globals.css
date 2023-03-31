@@ -11,3 +11,18 @@ input:focus {
   outline: none !important;
   border: 2px solid rgb(16 185 129);
 }
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+

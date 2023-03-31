@@ -51,6 +51,11 @@ export default function Projects() {
                 Glowing Animation
               </Link>
             </li>
+            <li>
+              <Link href="/projects/fancy-button" className="hover:underline">
+                Fancy Button
+              </Link>
+            </li>
           </ul>
         </div>
       </main>
