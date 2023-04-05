@@ -42,10 +42,16 @@ export default function Foo() {
   const spacing = 0;
   const size = 50;
 
-  const calculateNumCirclesPerRow = (width, size, spacing) =>
-    Math.floor(width / (size + spacing / 2) - spacing / 2);
-  const calculateNumCirclesPerCol = (height, size, spacing) =>
-    Math.floor(height / (size + spacing / 2) - spacing / 2);
+  const calculateNumCirclesPerRow = (
+    width: number,
+    size: number,
+    spacing: number
+  ) => Math.floor(width / (size + spacing / 2) - spacing / 2);
+  const calculateNumCirclesPerCol = (
+    height: number,
+    size: number,
+    spacing: number
+  ) => Math.floor(height / (size + spacing / 2) - spacing / 2);
 
   useEffect(() => {
     setNumCirclesPerRow(
@@ -65,7 +71,8 @@ export default function Foo() {
     });
   }, []);
 
-  const isHover = (r, c) => r === hoverCoords[0] && c === hoverCoords[1];
+  const isHover = (r: number, c: number) =>
+    r === hoverCoords[0] && c === hoverCoords[1];
 
   return (
     <>
