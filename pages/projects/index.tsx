@@ -56,6 +56,14 @@ export default function Projects() {
                 Fancy Button
               </Link>
             </li>
+            <li>
+              <Link
+                href="/projects/shader-light-effect"
+                className="hover:underline"
+              >
+                Shader Light Effect
+              </Link>
+            </li>
           </ul>
         </div>
       </main>

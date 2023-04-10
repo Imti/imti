@@ -190,8 +190,16 @@ function Shapes({
   mouseX: MotionValue;
   mouseY: MotionValue;
 }) {
-  const lightRotateX = useSmoothTransform(mouseY, spring, mouseToLightRotation);
-  const lightRotateY = useSmoothTransform(mouseX, spring, mouseToLightRotation);
+  const lightRotateX: any = useSmoothTransform(
+    mouseY,
+    spring,
+    mouseToLightRotation
+  );
+  const lightRotateY: any = useSmoothTransform(
+    mouseX,
+    spring,
+    mouseToLightRotation
+  );
 
   return (
     <Canvas
@@ -203,10 +211,7 @@ function Shapes({
     >
       <Camera mouseX={mouseX} mouseY={mouseY}></Camera>
       <MotionConfig transition={transition}>
-        <motion3D.group
-          center={[0, 0, 0]}
-          rotation={[lightRotateX, lightRotateY, 0]}
-        >
+        <motion3D.group rotation={[lightRotateX, lightRotateY, 0]}>
           <Lights />
         </motion3D.group>
         <motion3D.group
@@ -295,8 +300,12 @@ function Camera({
   mouseX: MotionValue;
   mouseY: MotionValue;
 }) {
-  const cameraX = useSmoothTransform(mouseX, spring, (x) => x / 350);
-  const cameraY = useSmoothTransform(mouseY, spring, (y) => (-1 * y) / 350);
+  const cameraX: any = useSmoothTransform(mouseX, spring, (x) => x / 350);
+  const cameraY: any = useSmoothTransform(
+    mouseY,
+    spring,
+    (y) => (-1 * y) / 350
+  );
 
   const set = useThree(({ set }) => set);
   const camera = useThree(({ camera }) => camera);
@@ -308,14 +317,14 @@ function Camera({
     const { current: cam } = cameraRef;
     if (cam) {
       cam.aspect = size.width / size.height;
-      cam.updateProjectionMatrix();
+      cam.updateProjectionMatrix!();
     }
   }, [size, props]);
 
   useLayoutEffect(() => {
     if (cameraRef.current) {
       const oldCam = camera;
-      set(() => ({ camera: cameraRef.current }));
+      set(() => ({ camera: cameraRef.current as any }));
       return () => set(() => ({ camera: oldCam }));
     }
   }, [camera, cameraRef, set]);
